@@ -2729,6 +2729,17 @@ binocularsIcon.parentNode.appendChild(textBox);
                 filterFunc();
             };
             div_road_ward.appendChild(reset_road_ward);
+				var adminPassword = "1234"; // change this to your password
+
+function checkPassword() {
+    var entered = prompt("Enter password to perform this action:");
+    if (entered === adminPassword) {
+        return true;
+    } else {
+        alert("Wrong password!");
+        return false;
+    }
+}
 			var drawnItems = new L.FeatureGroup();
 map.addLayer(drawnItems);
 
